@@ -21,10 +21,11 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   React.useEffect(() => {
+    // Afficher le toast une seule fois après le chargement de la page
     const timer = setTimeout(() => {
       toast.success("Bienvenue sur Colisec !");
-    }, 1000);
-
+    }, 800);
+    
     return () => clearTimeout(timer);
   }, []);
 
@@ -41,35 +42,23 @@ const Index = () => {
           </div>
           
           <div className="text-center max-w-4xl mx-auto space-y-6">
-            <div 
-              className="animate-fade-up opacity-0"
-              style={{ animationDelay: '100ms' }}
-            >
+            <div>
               <h1 className="heading-xl bg-gradient-to-r from-colisec-purple to-colisec-purple-accent bg-clip-text text-transparent">
                 La Révolution Digitale de la Gestion de Vos Expéditions
               </h1>
             </div>
             
-            <div 
-              className="animate-fade-up opacity-0"
-              style={{ animationDelay: '300ms' }}
-            >
+            <div>
               <p className="subheading">
                 Simplifiez et optimisez la gestion de vos expéditions en toute sérénité
               </p>
             </div>
             
-            <div 
-              className="pt-6 flex justify-center animate-fade-up opacity-0"
-              style={{ animationDelay: '500ms' }}
-            >
+            <div className="pt-6 flex justify-center">
               <TrackingSearch />
             </div>
             
-            <div 
-              className="pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up opacity-0"
-              style={{ animationDelay: '700ms' }}
-            >
+            <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 asChild
                 className="bg-gradient-primary hover:opacity-90 shadow-button w-full sm:w-auto"
@@ -97,7 +86,7 @@ const Index = () => {
       {/* Why Choose Us Section */}
       <section className="section-padding bg-white/50">
         <div className="max-container">
-          <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-up opacity-0">
+          <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-block px-4 py-1.5 bg-gradient-to-r from-colisec-purple/20 to-colisec-purple-accent/20 rounded-full text-colisec-purple font-medium text-sm mb-4">
               🌍 Pourquoi Choisir Colisec ?
             </div>
