@@ -33,7 +33,7 @@ const DemoRequest = () => {
         
         <div className="max-container">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="animate-fade-up opacity-0" style={{ animationDelay: '100ms' }}>
+            <div>
               <h1 className="heading-lg mb-6">Découvrez Colisec en Action !</h1>
               <p className="text-lg text-gray-600">
                 Prenez rendez-vous pour une démonstration gratuite et personnalisée de notre plateforme. 
@@ -43,7 +43,7 @@ const DemoRequest = () => {
             </div>
           </div>
           
-          <div className="max-w-3xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: '300ms' }}>
+          <div className="max-w-3xl mx-auto">
             <div className="glassmorphism p-8 sm:p-10 rounded-3xl">
               <h2 className="text-2xl font-bold mb-8 text-colisec-purple flex items-center gap-2">
                 <Monitor className="w-5 h-5" /> Demander une Démonstration

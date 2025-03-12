@@ -26,7 +26,7 @@ const Contact = () => {
         
         <div className="max-container">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="animate-fade-up opacity-0" style={{ animationDelay: '100ms' }}>
+            <div>
               <h1 className="heading-lg mb-6">Nous sommes à votre écoute</h1>
               <p className="text-lg text-gray-600">
                 Vous avez des questions ou besoin d'assistance ? Notre équipe est là pour vous accompagner à chaque étape.
@@ -35,7 +35,7 @@ const Contact = () => {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 animate-fade-up opacity-0" style={{ animationDelay: '300ms' }}>
+            <div className="lg:col-span-2">
               <div className="glassmorphism p-8 sm:p-10 rounded-3xl h-full">
                 <h2 className="text-2xl font-bold mb-8 text-colisec-purple flex items-center gap-2">
                   <MessageSquare className="w-5 h-5" /> Formulaire de Contact
@@ -112,7 +112,7 @@ const Contact = () => {
               </div>
             </div>
             
-            <div className="animate-fade-up opacity-0" style={{ animationDelay: '500ms' }}>
+            <div>
               <div className="glassmorphism p-8 sm:p-10 rounded-3xl h-full">
                 <h2 className="text-2xl font-bold mb-6 text-colisec-purple">Informations de contact</h2>
                 

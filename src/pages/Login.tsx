@@ -20,7 +20,7 @@ const Login = () => {
         
         <div className="max-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-up opacity-0" style={{ animationDelay: '100ms' }}>
+            <div>
               <h1 className="heading-lg mb-6">Bienvenue sur votre espace Colisec</h1>
               <p className="text-lg text-gray-600 mb-8">
                 Accédez à votre compte et gérez vos expéditions en toute simplicité. 
@@ -29,7 +29,7 @@ const Login = () => {
               </p>
             </div>
             
-            <div className="animate-fade-up opacity-0" style={{ animationDelay: '300ms' }}>
+            <div>
               <div className="glassmorphism p-8 sm:p-10 rounded-3xl">
                 <h2 className="text-2xl font-bold mb-6 text-colisec-purple">Connectez-vous à votre compte</h2>
                 

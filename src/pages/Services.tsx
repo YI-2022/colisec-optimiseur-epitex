@@ -26,14 +26,7 @@ interface ServiceFeatureProps {
 
 const ServiceFeature = ({ icon, title, description, benefits, index, isReversed = false }: ServiceFeatureProps) => {
   return (
-    <div 
-      className="py-16 md:py-24"
-      style={{ 
-        opacity: 0,
-        animation: 'fade-up 0.8s ease-out forwards',
-        animationDelay: `${index * 150}ms`
-      }}
-    >
+    <div className="py-16 md:py-24">
       <div className={cn(
         "flex flex-col gap-10",
         isReversed ? "md:flex-row-reverse" : "md:flex-row"
@@ -118,7 +111,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="page-transition min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero Section */}
@@ -129,13 +122,13 @@ const Services = () => {
         </div>
         
         <div className="max-container text-center">
-          <div className="inline-block px-4 py-1.5 bg-gradient-to-r from-colisec-purple/20 to-colisec-purple-accent/20 rounded-full text-colisec-purple font-medium text-sm mb-4 animate-fade-up opacity-0">
+          <div className="inline-block px-4 py-1.5 bg-gradient-to-r from-colisec-purple/20 to-colisec-purple-accent/20 rounded-full text-colisec-purple font-medium text-sm mb-4">
             🚛 Nos Services
           </div>
-          <h1 className="heading-lg mb-6 animate-fade-up opacity-0" style={{ animationDelay: '150ms' }}>
+          <h1 className="heading-lg mb-6">
             Les Fonctionnalités Clés de Colisec
           </h1>
-          <p className="subheading max-w-2xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: '300ms' }}>
+          <p className="subheading max-w-2xl mx-auto">
             Découvrez comment Colisec révolutionne la gestion de vos expéditions avec des outils puissants et intuitifs.
           </p>
         </div>
