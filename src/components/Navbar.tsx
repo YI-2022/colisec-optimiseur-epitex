@@ -33,6 +33,7 @@ const Navbar = () => {
     { name: 'Nos Services', path: '/services' },
     { name: 'Tarification', path: '/pricing' },
     { name: 'Ressources', path: '/resources' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   return (
@@ -73,13 +74,15 @@ const Navbar = () => {
           <Button
             className="bg-white text-colisec-purple hover:bg-gray-50"
             variant="outline"
+            asChild
           >
-            Connexion
+            <Link to="/login">Connexion</Link>
           </Button>
           <Button
             className="bg-gradient-primary hover:opacity-90 shadow-button"
+            asChild
           >
-            Demande de devis
+            <Link to="/quote-request">Demande de devis</Link>
           </Button>
         </div>
 
@@ -115,13 +118,15 @@ const Navbar = () => {
               <Button
                 className="w-full bg-white text-colisec-purple hover:bg-gray-50"
                 variant="outline"
+                asChild
               >
-                Connexion
+                <Link to="/login">Connexion</Link>
               </Button>
               <Button
                 className="w-full bg-gradient-primary hover:opacity-90"
+                asChild
               >
-                Devis
+                <Link to="/quote-request">Devis</Link>
               </Button>
             </div>
           </div>

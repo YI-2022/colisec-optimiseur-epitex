@@ -8,7 +8,9 @@ import {
   BarChart, 
   Settings, 
   RefreshCw, 
-  ChevronRight 
+  ChevronRight,
+  Monitor,
+  MessageSquare
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
@@ -184,15 +186,21 @@ const Index = () => {
                 <Button 
                   className="bg-gradient-primary hover:opacity-90 shadow-button"
                   size="lg"
+                  asChild
                 >
-                  Demande de démonstration
+                  <Link to="/demo-request">
+                    <Monitor className="mr-2 h-4 w-4" /> Demande de démonstration
+                  </Link>
                 </Button>
                 <Button 
                   variant="outline"
                   className="bg-white text-colisec-purple hover:bg-gray-50"
                   size="lg"
+                  asChild
                 >
-                  Contactez-nous
+                  <Link to="/contact">
+                    <MessageSquare className="mr-2 h-4 w-4" /> Contactez-nous
+                  </Link>
                 </Button>
               </div>
             </div>
