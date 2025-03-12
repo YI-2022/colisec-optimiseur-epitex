@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Package, 
@@ -18,16 +18,16 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 const Index = () => {
-  // Animation helpers
-  useEffect(() => {
-    // Welcome toast
-    setTimeout(() => {
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
       toast.success("Bienvenue sur Colisec !");
     }, 1000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="page-transition min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero Section */}
