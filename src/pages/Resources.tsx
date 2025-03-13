@@ -68,7 +68,7 @@ const Resources = () => {
   ];
 
   return (
-    <div className="page-transition min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero Section */}
@@ -79,21 +79,13 @@ const Resources = () => {
         </div>
         
         <div className="max-container text-center">
-          <div 
-            className="inline-block px-4 py-1.5 bg-gradient-to-r from-colisec-purple/20 to-colisec-purple-accent/20 rounded-full text-colisec-purple font-medium text-sm mb-4 animate-fade-up opacity-0"
-          >
+          <div className="inline-block px-4 py-1.5 bg-gradient-to-r from-colisec-purple/20 to-colisec-purple-accent/20 rounded-full text-colisec-purple font-medium text-sm mb-4">
             Ressources
           </div>
-          <h1 
-            className="heading-lg mb-6 animate-fade-up opacity-0"
-            style={{ animationDelay: '150ms' }}
-          >
+          <h1 className="heading-lg mb-6">
             Tout ce dont vous avez besoin
           </h1>
-          <p 
-            className="subheading max-w-2xl mx-auto animate-fade-up opacity-0"
-            style={{ animationDelay: '300ms' }}
-          >
+          <p className="subheading max-w-2xl mx-auto">
             Trouvez toutes les informations et le support nécessaires pour optimiser votre expérience avec Colisec.
           </p>
         </div>
@@ -110,7 +102,7 @@ const Resources = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="glassmorphism animate-fade-up opacity-0" style={{ animationDelay: '300ms' }}>
+            <Card className="glassmorphism">
               <CardHeader className="flex flex-col items-center">
                 <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-primary mb-4 shadow-glow">
                   <HelpCircle className="h-8 w-8 text-white" />
@@ -135,7 +127,7 @@ const Resources = () => {
               </CardFooter>
             </Card>
             
-            <Card className="glassmorphism animate-fade-up opacity-0" style={{ animationDelay: '450ms' }}>
+            <Card className="glassmorphism">
               <CardHeader className="flex flex-col items-center">
                 <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-primary mb-4 shadow-glow">
                   <MessageSquare className="h-8 w-8 text-white" />
@@ -157,7 +149,7 @@ const Resources = () => {
               </CardFooter>
             </Card>
             
-            <Card className="glassmorphism animate-fade-up opacity-0" style={{ animationDelay: '600ms' }}>
+            <Card className="glassmorphism">
               <CardHeader className="flex flex-col items-center">
                 <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-primary mb-4 shadow-glow">
                   <Phone className="h-8 w-8 text-white" />
@@ -250,11 +242,6 @@ const Resources = () => {
               <div 
                 key={index} 
                 className="glassmorphism p-6 rounded-xl"
-                style={{ 
-                  opacity: 0,
-                  animation: 'fade-up 0.6s ease-out forwards',
-                  animationDelay: `${300 + index * 150}ms`
-                }}
               >
                 <div className="flex justify-center mb-4">
                   {doc.icon}

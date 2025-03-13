@@ -77,7 +77,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="page-transition min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       
       {/* Hero Section */}
@@ -88,21 +88,13 @@ const Pricing = () => {
         </div>
         
         <div className="max-container text-center">
-          <div 
-            className="inline-block px-4 py-1.5 bg-gradient-to-r from-colisec-purple/20 to-colisec-purple-accent/20 rounded-full text-colisec-purple font-medium text-sm mb-4 animate-fade-up opacity-0"
-          >
+          <div className="inline-block px-4 py-1.5 bg-gradient-to-r from-colisec-purple/20 to-colisec-purple-accent/20 rounded-full text-colisec-purple font-medium text-sm mb-4">
             Tarification
           </div>
-          <h1 
-            className="heading-lg mb-6 animate-fade-up opacity-0"
-            style={{ animationDelay: '150ms' }}
-          >
+          <h1 className="heading-lg mb-6">
             Choisissez le Plan Adapté à Vos Besoins
           </h1>
-          <p 
-            className="subheading max-w-2xl mx-auto animate-fade-up opacity-0"
-            style={{ animationDelay: '300ms' }}
-          >
+          <p className="subheading max-w-2xl mx-auto">
             💼 Boostez votre Travail d'Équipe. Commencez gratuitement et accédez à une gestion optimisée de vos expéditions.
           </p>
         </div>
@@ -111,10 +103,7 @@ const Pricing = () => {
       {/* Pricing Section */}
       <section className="px-4 sm:px-6 lg:px-8 pb-24">
         <div className="max-container">
-          <div 
-            className="flex justify-center mb-12 animate-fade-up opacity-0"
-            style={{ animationDelay: '450ms' }}
-          >
+          <div className="flex justify-center mb-12">
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-1.5 border border-gray-100 shadow-sm">
               <Tabs
                 value={billingPeriod}
@@ -152,10 +141,7 @@ const Pricing = () => {
           </div>
           
           <div className="mt-16 text-center">
-            <div 
-              className="glassmorphism max-w-3xl mx-auto p-8 rounded-2xl shadow-soft animate-fade-up opacity-0"
-              style={{ animationDelay: '600ms' }}
-            >
+            <div className="glassmorphism max-w-3xl mx-auto p-8 rounded-2xl shadow-soft">
               <h3 className="text-2xl font-bold mb-4 text-gray-900">
                 Besoin d'une solution sur mesure ?
               </h3>
