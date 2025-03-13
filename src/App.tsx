@@ -13,6 +13,7 @@ import Login from "./pages/Login";
 import QuoteRequest from "./pages/QuoteRequest";
 import DemoRequest from "./pages/DemoRequest";
 import Contact from "./pages/Contact";
+import Tracking from "./pages/Tracking";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/quote-request" element={<QuoteRequest />} />
             <Route path="/demo-request" element={<DemoRequest />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/tracking" element={<Tracking />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
