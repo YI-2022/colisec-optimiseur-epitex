@@ -46,11 +46,6 @@ const PricingCard = ({
           : "glassmorphism border-gray-100",
         highlighted && "hover:shadow-xl hover:-translate-y-1"
       )}
-      style={{ 
-        animationDelay: `${index * 150}ms`,
-        opacity: 0,
-        animation: 'fade-up 0.8s ease-out forwards'
-      }}
     >
       {highlighted && (
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-white text-colisec-purple text-sm font-semibold py-1 px-4 rounded-full shadow-md">

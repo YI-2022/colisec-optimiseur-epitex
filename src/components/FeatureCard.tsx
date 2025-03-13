@@ -24,11 +24,6 @@ const FeatureCard = ({
         "feature-card flex flex-col items-start",
         className
       )}
-      style={{ 
-        animationDelay: `${index * 150}ms`,
-        opacity: 0,
-        animation: 'fade-up 0.8s ease-out forwards'
-      }}
     >
       <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-primary mb-6 shadow-glow">
         <Icon className="text-white" size={24} />
