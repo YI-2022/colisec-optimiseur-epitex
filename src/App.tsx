@@ -10,6 +10,8 @@ import Pricing from "./pages/Pricing";
 import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import ForgotPassword from "./pages/ForgotPassword";
 import QuoteRequest from "./pages/QuoteRequest";
 import DemoRequest from "./pages/DemoRequest";
 import Contact from "./pages/Contact";
@@ -31,6 +33,8 @@ const App = () => {
             <Route path="/ressources" element={<Resources />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/quote-request" element={<QuoteRequest />} />
             <Route path="/demo-request" element={<DemoRequest />} />
             <Route path="/contact" element={<Contact />} />
